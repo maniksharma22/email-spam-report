@@ -1,16 +1,71 @@
-# React + Vite
+﻿## Email Spam Report Tool
+This repository is for the Full Stack Developer Intern assignment: Email Spam Report Tool.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Goal: build a web app that tests email deliverability to several test inboxes and reports Inbox/Spam/Promotions.
 
-Currently, two official plugins are available:
+# ✨ Email Spam Report Tool
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A web tool to test where your emails land — Inbox, Spam, or Promotions. This tool helps you analyze email deliverability, track results, and maintain a history of tests.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- Generate a **unique test code** to include in your emails.
+- Check where your emails land in multiple test inboxes.
+- Show **overall deliverability score** (e.g., 4/5 inbox = 80%).
+- Maintain **past test history** for comparison.
+- **Open and click tracking** (basic implementation).
+- Responsive, modern UI with clear visual hierarchy and loading states.
+- Designed for production-level quality.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## How It Works
+
+1. Enter your email and Gmail refresh token.
+2. Send a test email including the generated test code.
+3. Click **Check Email Status**.
+4. The backend checks each test inbox using Gmail API and labels.
+5. Results are displayed with badges: **Inbox, Spam, Promotions, Not Received, Error**.
+6. Past results are saved locally in browser storage for comparison.
+7. Optional: Report is sent to your email (requires valid Gmail OAuth token).
+
+---
+
+## Test Inboxes
+
+These inboxes are used to check email deliverability:
+
+- ms8883314@gmail.com  
+- madavsharma4545@gmail.com  
+- madavsharma2002@gmail.com  
+- maniksharma0325@gmail.com  
+- ms8535731@gmail.com  
+
+---
+
+## Past Test History
+
+Displayed in the app for quick comparison of previous results
+
+
+---
+
+## What's Missing / Could Be Improved
+
+- Advanced open and click tracking (currently basic).
+- Support for more test inboxes and custom domains.
+- Persistent server-side history for multiple users.
+- UI/UX improvements for mobile and smaller screens.
+- Integration with external email providers beyond Gmail.
+- Automated report PDF generation for sharing.
+
+## Deployment
+
+This app can be deployed on Render
+ or similar platforms.
+
+
+
+
