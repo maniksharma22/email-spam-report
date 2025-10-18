@@ -54,12 +54,12 @@ Displayed in the app for quick comparison of previous results
 
 ## What's Missing / Could Be Improved
 
--Advanced open and click tracking (currently basic).
--Support for more test inboxes and custom domains.
--Persistent server-side history for multiple users.
--UI/UX improvements for mobile and smaller screens.
--Integration with external email providers beyond Gmail.
--Automated report PDF generation for sharing.
+- Advanced open and click tracking (currently basic).
+- Support for more test inboxes and custom domains.
+- Persistent server-side history for multiple users.
+- UI/UX improvements for mobile and smaller screens.
+- Integration with external email providers beyond Gmail.
+- Automated report PDF generation for sharing.
 
 ## Deployment
 
